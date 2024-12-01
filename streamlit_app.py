@@ -19,6 +19,7 @@ def create_db():
         urgency TEXT,
         date TIMESTAMP
     )
+    ''')
     conn.commit()
     conn.close()
 
@@ -111,4 +112,3 @@ if history:
         st.write(f"Sentiment: {entry[3]}")
         st.write(f"Urgency: {entry[4]}")
         st.write("-" * 50)
-
